@@ -1,0 +1,32 @@
+{
+  "name": "board",
+  "version": "0.0.0",
+  "authors": [
+    "Éverton Inocêncio <hewerthomn@gmail.com>"
+  ],
+  "description": "board to put pictures",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "board",
+    "angular",
+    "angularjs",
+    "canvas",
+    "html5"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.3.14",
+    "font-awesome": "~4.3.0"
+  }
+}

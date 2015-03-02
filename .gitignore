@@ -1,0 +1,5 @@
+*sublime*
+build/*
+node_modules/*
+packages/*
+.altax

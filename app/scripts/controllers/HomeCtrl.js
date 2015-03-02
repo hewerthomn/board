@@ -1,7 +1,7 @@
 /*
  * Home Controller
  */
-function HomeCtrl($scope)
+function HomeCtrl($scope, Board)
 {
 	function _init()
 	{
@@ -9,7 +9,9 @@ function HomeCtrl($scope)
 		{
 			id: 'dog',
 			name: 'Dog',
-			defaults: {	}
+			defaults: {
+				img: '/img/dog.png'
+			}
 		},
 		{
 			id: 'text',
@@ -19,11 +21,13 @@ function HomeCtrl($scope)
 
 		$scope.newItem = $scope.items[0];
 		$scope.selectedItem = null;
+
+		Board.init();
 	};
 
 	$scope.addItem = function(item)
 	{
-		console.log('add item: ', item);
+		Board.add(item);
 	};
 
 	$scope.showDefaults = function(item)
@@ -36,4 +40,4 @@ function HomeCtrl($scope)
 
 angular
 	.module('app.controllers')
-	.controller('HomeCtrl', ['$scope', HomeCtrl]);
+	.controller('HomeCtrl', ['$scope', 'Board', HomeCtrl]);

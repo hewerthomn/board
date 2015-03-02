@@ -21,6 +21,7 @@ module.exports = function(grunt) {
 					'app/scripts/factories/main.js',
 
 					'app/scripts/services/main.js',
+					'app/scripts/services/BoardService.js',
 
 					'app/scripts/app.js',
 				]
